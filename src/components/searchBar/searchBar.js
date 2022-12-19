@@ -88,7 +88,7 @@ function SearchBar() {
   const onInputChange = (event) => {
     if (event.target.value.length<=1) setOptions([]);
     else {setOptions(
-      defaultOptions.filter((option) => option.includes(event.target.value))
+      defaultOptions.filter((option) => option.toLowerCase().includes(event.target.value.toLowerCase()))
     );
     }
   };
