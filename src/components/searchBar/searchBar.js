@@ -115,9 +115,9 @@ function SearchBar() {
 
                 inputRef.current.value = option;
                 
-                 axios.get('http://127.0.0.1:5000/search?title=' + option , {
+                // axios.get('http://127.0.0.1:5000/search?title=' + option , {
 
-                //axios.get('http://191b-35-194-94-22.ngrok.io/search?title=' + option , {
+                axios.get('https://siddhant2505.pythonanywhere.com/search?title=' + option , {
                   headers : {
                     "ngrok-skip-browser-warning" : "1"
                   }
